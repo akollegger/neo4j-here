@@ -11,7 +11,7 @@
     "watch": "rollup -c -w",
     "pretest": "npm run build",
     "test": "mocha",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "repository": "akollegger/neo4j-here",
   "keywords": [
@@ -24,7 +24,8 @@
   },
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "bin"
   ],
   "bin": {
    "near": "bin/near.js"
