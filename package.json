@@ -1,6 +1,6 @@
 {
   "name": "neo4j-here",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Manage local Neo4j installation.",
   "main": "dist/neo4j-here.js",
   "module": "dist/neo4j-here.mjs",
@@ -11,7 +11,8 @@
     "watch": "rollup -c -w",
     "pretest": "npm run build",
     "test": "mocha",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "preinstall": "npm run build"
   },
   "repository": "akollegger/neo4j-here",
   "keywords": [
